@@ -18,7 +18,7 @@ const listaUsuarios = [
 //git rm --cached <file>...
 
 //Query Params
-//Ex: localhost:3000/usuarios
+//Ex: localhost:3000/usuarios?nome=Natalia
 app.get('/usuarios', (req, res) => {
     const { nome } = req.query;
     let listaRetorno = listaUsuarios.filter( i => i.includes(nome || ''));
